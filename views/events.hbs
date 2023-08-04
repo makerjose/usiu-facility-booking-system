@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Events</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>All Events</h1>
+      <table>
+        <tr>
+          <th>Venue</th>
+          <th>Capacity</th>
+          <th>Booking Date</th>
+          <th>Booking Time</th>
+          <th>Event Cost</th>
+          <th>Delete</th>
+        </tr>
+        {{#each events}}
+        <tr>
+          <td>{{this.venue}}</td>
+          <td>{{this.capacity}}</td>
+          <td>{{this.book_date}}</td>
+          <td>{{this.book_time}}</td>
+          <td>{{this.cost}}</td>
+          <td><button class="delete-btn" data-id="{{this._id}}">Delete</button></td>
+        </tr>
+        {{/each}}
+      </table>
+      <a href="/"><button>BOOK NEW EVENT</button></a>
+    </div>
+
+  </body>
+</html>

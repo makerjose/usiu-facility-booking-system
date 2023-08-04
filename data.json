@@ -1,0 +1,93 @@
+[
+  {
+    "venue": "tvroom_1",
+    "capacity": 37,
+    "book_date": "2023-08-16",
+    "book_time": "23:50",
+    "cost": 3700
+  },
+  {
+    "venue": "auditorium",
+    "capacity": 60,
+    "book_date": "2023-08-16",
+    "book_time": "23:27",
+    "cost": 15000
+  },
+  {
+    "venue": "auditorium",
+    "capacity": 60,
+    "book_date": "2023-08-16",
+    "book_time": "23:27",
+    "cost": 15000
+  },
+  {
+    "venue": "auditorium",
+    "capacity": 60,
+    "book_date": "2023-08-16",
+    "book_time": "23:27",
+    "cost": 15000
+  },
+  {
+    "venue": "tvroom_2",
+    "capacity": 10,
+    "book_date": "2023-08-15",
+    "book_time": "12:40",
+    "cost": 500
+  },
+  {
+    "venue": "tvroom_2",
+    "capacity": 10,
+    "book_date": "2023-08-15",
+    "book_time": "12:40",
+    "cost": 500
+  },
+  {
+    "venue": "tvroom_2",
+    "capacity": 10,
+    "book_date": "2023-08-15",
+    "book_time": "12:40",
+    "cost": 500
+  },
+  {
+    "venue": "tvroom_2",
+    "capacity": 10,
+    "book_date": "2023-08-15",
+    "book_time": "12:40",
+    "cost": 500
+  },
+  {
+    "venue": "auditorium",
+    "capacity": 40,
+    "book_date": "2023-08-08",
+    "book_time": "12:58",
+    "cost": 10000
+  },
+  {
+    "venue": "auditorium",
+    "capacity": 40,
+    "book_date": "2023-08-08",
+    "book_time": "12:58",
+    "cost": 10000
+  },
+  {
+    "venue": "tvroom_2",
+    "capacity": 15,
+    "book_date": "2023-08-09",
+    "book_time": "13:05",
+    "cost": 750
+  },
+  {
+    "venue": "auditorium",
+    "capacity": 45,
+    "book_date": "2023-08-15",
+    "book_time": "13:09",
+    "cost": 11250
+  },
+  {
+    "venue": "tvroom_1",
+    "capacity": 15,
+    "book_date": "2023-08-16",
+    "book_time": "14:16",
+    "cost": 1500
+  }
+]

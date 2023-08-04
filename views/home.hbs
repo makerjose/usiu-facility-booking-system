@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <form action="/event-report" method="post">
+        <div class="row">
+          <h1>USIU FACILITY BOOKING SYSTEM</h1>
+
+          <div class="input-group input-group-icon">
+            <input type="text" placeholder="Event Name" name="event_name"/>
+          </div>
+
+          <div class="input-group input-group-icon">
+            <select style="width:100%" name="venue">
+              <option value="auditorium">Auditorium</option>
+              <option value="tvroom_1">TV Room 1</option>
+              <option value="tvroom_2">TV Room 2</option>
+            </select>
+          </div>
+
+          <div class="input-group input-group-icon">
+            <input type="number" placeholder="Capacity" name="capacity"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-half">
+            <h4>Booking Date</h4>
+            <div class="input-group">
+                <input type="date" placeholder="Pick Date" name="date"/>
+            </div>
+          </div>
+
+          <div class="col-half">
+            <h4>Booking Time</h4>
+            <div class="input-group">
+              <div class="input-group">
+                  <input type="time" placeholder="Pick Time" name="time"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" id="book-btn">BOOK EVENT</button>
+      </form>
+
+      {{#if errorMessage}}
+        <div style="color: tomato;" class="error-message">{{errorMessage}}</div>
+      {{/if}}
+
+    </div>
+
+  </body>
+</html>
