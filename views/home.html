@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <form>
+        <div class="row">
+          <h4>USIU FACILITY BOOKING SYSTEM</h4>
+
+          <div class="input-group input-group-icon">
+            <input type="text" placeholder="Event Name"/>
+          </div>
+
+          <div class="input-group input-group-icon">
+            <select style="width:100%" name="place" id="place">
+              <option value="Auditorium">Auditorium</option>
+              <option value="TV_Room_1">TV Room 1</option>
+              <option value="TV_Room_2">TV Room 2</option>
+            </select>
+          </div>
+
+          <div class="input-group input-group-icon">
+            <input type="number" placeholder="Capacity"/>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-half">
+            <h4>Booking Date</h4>
+            <div class="input-group">
+                <input type="date" placeholder="Pick Date"/>
+            </div>
+          </div>
+
+          <div class="col-half">
+            <h4>Booking Time</h4>
+            <div class="input-group">
+              <div class="input-group">
+                  <input type="time" placeholder="Pick Date"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="proceed">PROCEED TO PAYMENT</button>
+      </form>
+    </div>
+
+  </body>
+</html>
