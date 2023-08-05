@@ -172,7 +172,7 @@ select option {
   transition: all 0.35s ease-in-out;
 }
 .container {
-  max-width: 38em;
+  max-width: 50em;
   padding: 1em 3em 2em 3em;
   margin: 0em auto;
   background-color: #fff;
@@ -206,6 +206,23 @@ select option {
 .col-third:last-of-type {
   padding-right: 0;
 }
+
+
+table, th, td {
+  border: 0.5px solid #f0a500;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.error-message {
+  color: tomato;
+  padding-top: 10px;
+}
+
+
+
 @media only screen and (max-width: 540px) {
   .col-half {
     width: 100%;

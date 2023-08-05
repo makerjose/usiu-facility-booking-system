@@ -9,14 +9,19 @@
 
     <div class="container">
       <h1>Event Details</h1>
+      <p><strong>Event Name:</strong> {{event_name}}</p>
       <p><strong>Venue:</strong> {{venue}}</p>
       <p><strong>Capacity:</strong> {{capacity}}</p>
       <p><strong>Booking Date:</strong> {{book_date}}</p>
       <p><strong>Booking Time:</strong> {{book_time}}</p>
-      <p><strong>Venue Charges:</strong> {{cost}}</p>
-      <a href="/view-events"><button>VIEW EVENTS</button></a>
+      <p><strong>Venue Charges:</strong> KES. {{cost}}</p>
+
+      <form action="/view-events" method="get">
+        <button type="submit" id="view-events-btn">VIEW EVENTS</button>
+      </form>
       <a href="/"><button>BOOK NEW EVENT</button></a>
     </div>
 
   </body>
 </html>
+

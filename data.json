@@ -1,93 +1,62 @@
 [
   {
+    "event_name": "Students general meeting",
     "venue": "tvroom_1",
-    "capacity": 37,
-    "book_date": "2023-08-16",
-    "book_time": "23:50",
-    "cost": 3700
-  },
-  {
-    "venue": "auditorium",
-    "capacity": 60,
-    "book_date": "2023-08-16",
-    "book_time": "23:27",
-    "cost": 15000
-  },
-  {
-    "venue": "auditorium",
-    "capacity": 60,
-    "book_date": "2023-08-16",
-    "book_time": "23:27",
-    "cost": 15000
-  },
-  {
-    "venue": "auditorium",
-    "capacity": 60,
-    "book_date": "2023-08-16",
-    "book_time": "23:27",
-    "cost": 15000
-  },
-  {
-    "venue": "tvroom_2",
-    "capacity": 10,
-    "book_date": "2023-08-15",
-    "book_time": "12:40",
-    "cost": 500
-  },
-  {
-    "venue": "tvroom_2",
-    "capacity": 10,
-    "book_date": "2023-08-15",
-    "book_time": "12:40",
-    "cost": 500
-  },
-  {
-    "venue": "tvroom_2",
-    "capacity": 10,
-    "book_date": "2023-08-15",
-    "book_time": "12:40",
-    "cost": 500
-  },
-  {
-    "venue": "tvroom_2",
-    "capacity": 10,
-    "book_date": "2023-08-15",
-    "book_time": "12:40",
-    "cost": 500
-  },
-  {
-    "venue": "auditorium",
-    "capacity": 40,
-    "book_date": "2023-08-08",
-    "book_time": "12:58",
-    "cost": 10000
-  },
-  {
-    "venue": "auditorium",
-    "capacity": 40,
-    "book_date": "2023-08-08",
-    "book_time": "12:58",
-    "cost": 10000
-  },
-  {
-    "venue": "tvroom_2",
-    "capacity": 15,
-    "book_date": "2023-08-09",
-    "book_time": "13:05",
-    "cost": 750
-  },
-  {
-    "venue": "auditorium",
     "capacity": 45,
-    "book_date": "2023-08-15",
-    "book_time": "13:09",
-    "cost": 11250
+    "book_date": "2023-08-23",
+    "book_time": "08:32",
+    "cost": 4500,
+    "_locals": {},
+    "id": "ea40f807-948d-4b45-bda2-24d97640b2f0"
   },
   {
+    "event_name": "APP4080 group meeting",
+    "venue": "tvroom_2",
+    "capacity": 8,
+    "book_date": "2023-08-15",
+    "book_time": "15:20",
+    "cost": 400,
+    "_locals": {},
+    "id": "032cb769-7131-42d1-913f-5cf1dc8019d9"
+  },
+  {
+    "event_name": "chess club meeting",
     "venue": "tvroom_1",
-    "capacity": 15,
+    "capacity": 45,
+    "book_date": "2023-08-08",
+    "book_time": "09:30",
+    "cost": 4500,
+    "_locals": {},
+    "id": "61537d43-5092-446f-a4b8-b8d58f127612"
+  },
+  {
+    "event_name": "my event",
+    "venue": "tvroom_2",
+    "capacity": 5,
     "book_date": "2023-08-16",
-    "book_time": "14:16",
-    "cost": 1500
+    "book_time": "18:00",
+    "cost": 250,
+    "_locals": {},
+    "id": "67529af7-3351-4938-bc72-5603276f9f39"
+  },
+  {
+    "event_name": "test1",
+    "venue": "tvroom_2",
+    "capacity": 6,
+    "book_date": "2023-08-17",
+    "book_time": "08:54",
+    "cost": 300,
+    "_locals": {},
+    "id": "cbdff494-45b4-4a27-b4cc-932d1c85d404"
+  },
+  {
+    "event_name": "test4",
+    "venue": "auditorium",
+    "capacity": 60,
+    "book_date": "",
+    "book_time": "19:54",
+    "cost": 15000,
+    "_locals": {},
+    "id": "772588c6-cc25-41ef-9c90-9bdc4443930a"
   }
 ]

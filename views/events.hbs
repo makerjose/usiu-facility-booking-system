@@ -1,3 +1,4 @@
+<!-- Events.hbs -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,26 +11,54 @@
       <h1>All Events</h1>
       <table>
         <tr>
+          <th>Event Name</th>
           <th>Venue</th>
           <th>Capacity</th>
-          <th>Booking Date</th>
-          <th>Booking Time</th>
-          <th>Event Cost</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Venue Charges</th>
           <th>Delete</th>
         </tr>
         {{#each events}}
         <tr>
+          <td>{{this.event_name}}</td>
           <td>{{this.venue}}</td>
           <td>{{this.capacity}}</td>
           <td>{{this.book_date}}</td>
           <td>{{this.book_time}}</td>
           <td>{{this.cost}}</td>
-          <td><button class="delete-btn" data-id="{{this._id}}">Delete</button></td>
+          <td><button class="delete-btn" data-id="{{this.id}}">Delete</button></td>
         </tr>
         {{/each}}
       </table>
       <a href="/"><button>BOOK NEW EVENT</button></a>
     </div>
 
+    <script>
+      // Function to handle the delete action
+      function deleteEvent(eventId) {
+        if (confirm("Are you sure you want to delete this event?")) {
+          fetch(`/delete-event?eventId=${eventId}`, {
+            method: "DELETE",
+          })
+            .then(() => {
+              // Reload the page after successful deletion
+              window.location.reload();
+            })
+            .catch((error) => {
+              console.error("Error deleting event:", error);
+            });
+        }
+      }
+
+      // Attach event listener to delete buttons
+      const deleteButtons = document.querySelectorAll(".delete-btn");
+      deleteButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const eventId = button.getAttribute("data-id");
+          deleteEvent(eventId);
+        });
+      });
+    </script>
   </body>
 </html>

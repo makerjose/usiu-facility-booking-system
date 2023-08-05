@@ -12,10 +12,7 @@
       <form action="/event-report" method="post">
         <div class="row">
           <h1>USIU FACILITY BOOKING SYSTEM</h1>
-
-          <div class="input-group input-group-icon">
-            <input type="text" placeholder="Event Name" name="event_name"/>
-          </div>
+          <h4>Venue Max Capacity</h4><p> {Auditorium: 100, TV ROOM1: 50, TV Room2: 30}</p>
 
           <div class="input-group input-group-icon">
             <select style="width:100%" name="venue">
@@ -23,6 +20,10 @@
               <option value="tvroom_1">TV Room 1</option>
               <option value="tvroom_2">TV Room 2</option>
             </select>
+          </div>
+
+          <div class="input-group input-group-icon">
+            <input type="text" placeholder="Event Name" name="event_name"/>
           </div>
 
           <div class="input-group input-group-icon">
@@ -48,14 +49,15 @@
           </div>
         </div>
 
-        <button type="submit" id="book-btn">BOOK EVENT</button>
+        <button type="submit" id="book-event-btn">BOOK EVENT</button>
       </form>
 
       {{#if errorMessage}}
-        <div style="color: tomato;" class="error-message">{{errorMessage}}</div>
+        <div class="error-message">{{errorMessage}}</div>
       {{/if}}
 
     </div>
 
   </body>
 </html>
+
