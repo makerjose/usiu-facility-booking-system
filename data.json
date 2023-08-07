@@ -178,5 +178,35 @@
     "cost": null,
     "_locals": {},
     "id": "833bdc13-14b8-4c15-a198-eeb2ba6dfa1e"
+  },
+  {
+    "event_name": "",
+    "venue": "auditorium",
+    "capacity": 50,
+    "book_date": "",
+    "book_time": "",
+    "cost": 12500,
+    "_locals": {},
+    "id": "32c12433-e732-41d8-9478-021eeb7c90ec"
+  },
+  {
+    "event_name": "",
+    "venue": "auditorium",
+    "capacity": 50,
+    "book_date": "",
+    "book_time": "",
+    "cost": 12500,
+    "_locals": {},
+    "id": "2d644103-4aa6-42a1-a70b-7789e0d43f4e"
+  },
+  {
+    "event_name": "",
+    "venue": "auditorium",
+    "capacity": 22,
+    "book_date": "",
+    "book_time": "",
+    "cost": 5500,
+    "_locals": {},
+    "id": "6ac6df56-315c-4737-90a6-a04d76671f6f"
   }
 ]

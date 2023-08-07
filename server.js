@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 const { v4: uuidv4 } = require('uuid');
-import {validateCapacity, calculateEventCharges} from "validate_calculate.js";
+const {validateCapacity, calculateEventCharges} = require('./validate_calculate');
 
 app.set('views', 'views');
 app.set('view engine', 'hbs');
