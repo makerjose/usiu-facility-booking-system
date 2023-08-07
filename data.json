@@ -58,5 +58,16 @@
     "cost": 15000,
     "_locals": {},
     "id": "772588c6-cc25-41ef-9c90-9bdc4443930a"
+  },
+ 
+  {
+    "event_name": "",
+    "venue": "auditorium",
+    "capacity": null,
+    "book_date": "",
+    "book_time": "",
+    "cost": null,
+    "_locals": {},
+    "id": "2451e47e-58f5-4a1f-8180-eca462d805fc"
   }
 ]

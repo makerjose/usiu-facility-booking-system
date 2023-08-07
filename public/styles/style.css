@@ -220,6 +220,17 @@ th, td {
   color: tomato;
   padding-top: 10px;
 }
+button{
+  background-color: #f0a500;
+  color: black;
+  font-weight: bold;
+}
+.delete-btn{
+  background-color: #f0a500;
+  color: black;
+  font-weight: bold;
+
+}
 
 
 
