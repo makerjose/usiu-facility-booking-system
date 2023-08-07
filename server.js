@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const urlEncodedParser = bodyParser.urlencoded({ extended: false });
 const { v4: uuidv4 } = require('uuid');
+const {validateCapacity, calculateEventCharges} = require('./validate_calculate');
 
 app.set('views', 'views');
 app.set('view engine', 'hbs');
@@ -44,29 +45,6 @@ app.post('/event-report', urlEncodedParser, function (request, response) {
     });
   }
 });
-
-function validateCapacity(venue, capacity) {
-  if (venue === 'auditorium' && capacity > 100) {
-    return false;
-  } else if (venue === 'tvroom_1' && capacity > 50) {
-    return false;
-  } else if (venue === 'tvroom_2' && capacity > 30) {
-    return false;
-  }
-  return true;
-}
-
-function calculateEventCharges(venue, capacity) {
-  //venue charges per seat
-  const venue_charges = {
-    auditorium: 250,
-    tvroom_1: 100,
-    tvroom_2: 50,
-  };
-
-  // Calculate the total charges based on the venue that has been selected
-  return capacity * venue_charges[venue];
-}
 
 function saveEventDetails(event) {
     fs.readFile('data.json', 'utf8', function (err, data) {
@@ -135,3 +113,5 @@ app.delete('/delete-event', function (request, response) {
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
+
+module.exports = {validateCapacity, calculateEventCharges};
