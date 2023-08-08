@@ -15,7 +15,7 @@
           <h4>Venue Max Capacity</h4><p> {Auditorium: 100, TV ROOM1: 50, TV Room2: 30}</p>
 
           <div class="input-group input-group-icon">
-            <select style="width:100%" name="venue">
+            <select style="width:100%" name="venue" id="venue">
               <option value="auditorium">Auditorium</option>
               <option value="tvroom_1">TV Room 1</option>
               <option value="tvroom_2">TV Room 2</option>
@@ -23,11 +23,11 @@
           </div>
 
           <div class="input-group input-group-icon">
-            <input type="text" placeholder="Event Name" name="event_name"/>
+            <input id="name" type="text" placeholder="Event Name" name="event_name" required/>
           </div>
 
           <div class="input-group input-group-icon">
-            <input type="number" id="capacity" placeholder="Capacity" name="capacity"/>
+            <input type="number" id="capacity" placeholder="Capacity" name="capacity" required/>
           </div>
         </div>
 
@@ -35,7 +35,7 @@
           <div class="col-half">
             <h4>Booking Date</h4>
             <div class="input-group">
-                <input type="date" placeholder="Pick Date" name="date"/>
+                <input type="date" placeholder="Pick Date" id="date" name="date" required/>
             </div>
           </div>
 
@@ -43,7 +43,7 @@
             <h4>Booking Time </h4>
             <div class="input-group">
               <div class="input-group">
-                  <input type="time" placeholder="Pick Time" name="time"/>
+                  <input type="time" id="time" placeholder="Pick Time" name="time" required/>
               </div>
             </div>
           </div>
