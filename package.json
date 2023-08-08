@@ -22,7 +22,7 @@
     "express-handlebars": "3.0.2",
     "handlebars": "^4.7.8",
     "hbs": "^4.2.0",
-    "puppeteer": "^21.0.1",
+    "puppeteer": "10.2.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
