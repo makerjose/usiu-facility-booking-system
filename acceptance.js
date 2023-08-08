@@ -40,28 +40,50 @@ try{
 
    
 
-    const searchBtn = await page.$('#book-event-btn')
+    const bookBtn = await page.$('#book-event-btn')
 
-    await searchBtn.click()
-
-   
-
-    const pageTitle = await page.title();
+    await bookBtn.click()
 
    
 
-    assert(pageTitle === 'Report');
-
-    console.log("Title matched successfully");
+    const pageTitle1 = await page.title();
 
 
-    await browser.close();
+    const bookNewBtn = await page.$('#book-new-event-btn')
 
-    })();
+    await bookNewBtn.click()
+
+    const pageTitle2 = await page.title();
+
+   
+
+    await venue.type('tvroom_2' )
+
+    await name.type('Mercedes Meeting' )
+
+    await capacity.type('15' )
+
+    await date.type('2023-08-15' )
+
+    await time.type('20:00' )
+
+    await bookBtn.click()
+
+   
+
+    const viewEventsBtn = await page.$('#view-events-btn')
+
+    await viewEventsBtn.click()
 
 
-} catch (err) {
+    const pageTitle3 = await page.title();
 
-    console.error(err);
+    await bookNewBtn.click()
 
-}
+
+    const pageTitle4 = await page.title();
+
+
+    assert(pageTitle1 === 'Report' && pageTitle2 === 'Home'  && pageTitle3 === 'Events' && pageTitle4 === 'Home');
+
+    console.log("Titles matched successfully");
