@@ -5,7 +5,7 @@ try{
     (async () => {
     const browser = await puppeteer.launch({headless:true});
     const page = await browser.newPage();
-    await page.goto("http://localhost:4000/");
+    await page.goto("https://usiu-facility-booking.onrender.com");
 
     const searchInput = await page.$('#capacity')
     await searchInput.type('22' )
@@ -24,3 +24,4 @@ try{
 } catch (err) {
     console.error(err);
 }
+

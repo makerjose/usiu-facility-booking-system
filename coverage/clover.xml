@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1691503945631" clover="3.2.0">
-  <project timestamp="1691503945632" name="All files">
+<coverage generated="1691511778186" clover="3.2.0">
+  <project timestamp="1691511778186" name="All files">
     <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2" elements="24" coveredelements="24" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
     <file name="validate_calculate.js" path="C:\Users\athletics\Desktop\usiu\Summer 2023\Collaborative Software Dev\usiu-facility-booking-system\validate_calculate.js">
       <metrics statements="10" coveredstatements="10" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
