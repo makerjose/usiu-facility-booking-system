@@ -9,17 +9,17 @@
 
     <div class="container">
       <h1>Event Details</h1>
-      <p><strong>Event Name:</strong> {{event_name}}</p>
-      <p><strong>Venue:</strong> {{venue}}</p>
-      <p><strong>Capacity:</strong> {{capacity}}</p>
-      <p><strong>Booking Date:</strong> {{book_date}}</p>
-      <p><strong>Booking Time:</strong> {{book_time}}</p>
-      <p><strong>Venue Charges:</strong> KES. {{cost}}</p>
+      <p>Event Name: <strong>{{event_name}}</strong></p>
+      <p>Venue: <strong></strong> </p>
+      <p>Capacity:  <strong>{{capacity}}</strong></p>
+      <p>Booking Date: <strong>{{book_date}}</strong></p>
+      <p>Booking Time:  <strong> {{book_time}}</strong></p>
+      <p>Venue Charges: KES. <strong>{{cost}}</strong></p>
 
       <form action="/view-events" method="get">
-        <button type="submit" id="view-events-btn">VIEW EVENTS</button>
+        <button type="submit" class="btn" id="view-events-btn">VIEW EVENTS</button>
       </form>
-      <a href="/"><button>BOOK NEW EVENT</button></a>
+      <a href="/"><button class="btn" id="book-new-event-btn">BOOK NEW EVENT</button></a>
     </div>
 
   </body>

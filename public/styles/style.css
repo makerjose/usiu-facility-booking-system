@@ -11,8 +11,11 @@ body {
   color: #b9b9b9;
   background-color: #e3e3e3;
 }
-h4, p, h1 {
+h4, h1 {
   color: #f0a500;
+}
+strong, p {
+  color: black;
 }
 input,
 input[type="radio"] + label,
@@ -186,43 +189,6 @@ form{
   border-radius: 5px;
 }
 
-#book-event-btn {
-  background-color: tomato;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
-}
-#book-event-btn:hover {
-  background-color: #CD7F32;
-  color: blue;
-}
-#view-events-btn{
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s, color 0.3s;
-  margin-left: -30px;
-}
-#view-events-btn:hover{
-  background-color: #CD7F32;
-  color: blue;
-}
-button{
-  background-color: tomato;
-  color: #ffffff;
-  border: none;
-}
-button:hover{
-  background-color: #CD7F32;
-  color: blue;
-}
 .row {
   zoom: 1;
 }
@@ -264,18 +230,32 @@ th, td {
   color: tomato;
   padding-top: 10px;
 }
-button{
-  background-color: #f0a500;
-  color: black;
-  font-weight: bold;
-}
+
 .delete-btn{
-  background-color: #f0a500;
+  background-color: tomato;
   color: black;
   font-weight: bold;
-
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
 }
 
+.btn {
+  background-color: #CD7F32;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #CD7F32;
+  color: black;
+}
 
 
 
