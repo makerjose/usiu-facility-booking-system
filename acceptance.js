@@ -5,8 +5,7 @@ try{
     const browser = await puppeteer.launch({headless:true});
     const page = await browser.newPage();
     await page.goto("https://usiu-facility-booking.onrender.com/");
-    const venue = await page.$('#venue')
-    await venue.type('auditorium' )
+    await page.select("select#venue", "auditorium")
     const name = await page.$('#name')
     await name.type('RedBull Meeting' )
     const capacity = await page.$('#capacity')
@@ -21,7 +20,7 @@ try{
     const bookNewBtn = await page.$('#book-new-event-btn')
     await bookNewBtn.click()
     const pageTitle2 = await page.title();
-    await venue.type('tvroom_2' )
+    await page.select("select#venue", "tvroom_2")
     await name.type('Mercedes Meeting' )
     await capacity.type('15' )
     await date.type('2023-08-15' )
