@@ -47,7 +47,7 @@ app.post('/event-report', urlEncodedParser, function (request, response) {
 });
 
 function saveEventDetails(event) {
-    fs.readFile('https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json', 'utf8', function (err, data) {
+    fs.readFile('data.json', 'utf8', function (err, data) {
       if (err) {
         console.log(err);
       } else {
@@ -58,7 +58,7 @@ function saveEventDetails(event) {
         event.id = uuidv4(); //generate a unique ID for each event
         eventDetails.push(event);
         const json = JSON.stringify(eventDetails, null, 2);
-        fs.writeFile('https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json', json, 'utf8', function (err) {
+        fs.writeFile('data.json', json, 'utf8', function (err) {
           if (err) {
             console.log(err);
           } else {
@@ -69,13 +69,13 @@ function saveEventDetails(event) {
     });
   }
 app.get('/view-events', function (request, response) {
-  fs.readFile('https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json', 'utf8', function (err, data) {
+  fs.readFile('data.json', 'utf8', function (err, data) {
     console.log("data fetched successfully");
     if (err) {
       console.log(err);
       response.render('events', { events: [] }); // pass an empty array if there's an error
     } else {
-      const events = JSON.parse(data); // parse the data from https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json
+      const events = JSON.parse(data); // parse the data from data.json
       response.render('events', { events: events }); // sending events to events.hbs
     }
   });
@@ -85,7 +85,7 @@ app.get('/view-events', function (request, response) {
 app.delete('/delete-event', function (request, response) {
     const eventIdToDelete = request.query.eventId;
   
-    fs.readFile('https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json', 'utf8', function (err, data) {
+    fs.readFile('data.json', 'utf8', function (err, data) {
       if (err) {
         console.log(err);
         response.status(500).send({ error: 'Internal server error' });
@@ -97,8 +97,8 @@ app.delete('/delete-event', function (request, response) {
   
         const json = JSON.stringify(events, null, 2);
   
-        // after filtering the event out, we rewrite the data back to https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json without the filtered event
-        fs.writeFile('https://github.com/makerjose/usiu-facility-booking-system/blob/main/data.json', json, 'utf8', function (err) {
+        // after filtering the event out, we rewrite the data back to data.json without the filtered event
+        fs.writeFile('data.json', json, 'utf8', function (err) {
           if (err) {
             console.log(err);
             response.status(500).send({ error: 'Internal server error' });
