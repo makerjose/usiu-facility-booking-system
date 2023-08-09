@@ -24,6 +24,7 @@ jobs:
       run: |
         npm install
         npm test
+        node acceptance.js
 
     # deployment hook 
     - name: Invoke deployment hook
