@@ -1,15 +1,5 @@
 [
   {
-    "event_name": "APP4080 group meeting",
-    "venue": "tvroom_2",
-    "capacity": 8,
-    "book_date": "2023-08-15",
-    "book_time": "15:20",
-    "cost": 400,
-    "_locals": {},
-    "id": "032cb769-7131-42d1-913f-5cf1dc8019d9"
-  },
-  {
     "event_name": "Students general meeting",
     "venue": "tvroom_2",
     "capacity": 25,
@@ -58,5 +48,15 @@
     "cost": 2500,
     "_locals": {},
     "id": "5821dcb9-ef25-41a1-b881-9d53ad7e1986"
+  },
+  {
+    "event_name": "test",
+    "venue": "auditorium",
+    "capacity": 35,
+    "book_date": "2024-11-26",
+    "book_time": "10:25",
+    "cost": 8750,
+    "_locals": {},
+    "id": "86bf9697-8fbf-4fbf-9185-34d712a43643"
   }
 ]
