@@ -6,11 +6,21 @@
 https://usiu-facility-booking.onrender.com
 
 ## Configuration locally. Run the following commands:
+```bash
 - npm install
 - npm install --save-dev jest
 - npm install puppeteer
+- npx puppeteer browsers install chrome
 - node server.js
+```
 
 ## Unit Testing & Acceptance Testing, run the following commands:
+```bash
 - npm test
 - node acceptance.js
+```
+
+## Incase of deprecated packages
+```bash
+- npm update
+```
