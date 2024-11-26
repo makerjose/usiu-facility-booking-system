@@ -1,14 +1,16 @@
 # usiu-facility-booking-system
+- Simple app to demonstrate use of Puppeteer to automate browser interactions & to test entire user flows across web applications programmatically
+- Implementation of CI/CD. Use GIthub Actions to automate your build, test, and deployment pipeline
 
-## app link:  
+### App link:  
 https://usiu-facility-booking.onrender.com
 
 ## Configuration locally. Run the following commands:
-npm install
-npm install --save-dev jest
-npm install puppeteer
-npm server.js
+- npm install
+- npm install --save-dev jest
+- npm install puppeteer
+- node server.js
 
-## To test, run the following commands:
-npm test
-node acceptance.js
+## Unit Testing & Acceptance Testing, run the following commands:
+- npm test
+- node acceptance.js
