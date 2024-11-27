@@ -28,6 +28,7 @@
     "hbs": "^4.2.0",
     "puppeteer": "^23.9.0",
     "rimraf": "^4.4.1",
+    "usiu-facility-booking-system": "file:",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
